@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("bg.png");
+    background-repeat: repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*LINKS*/
+/* unvisited link */
+a:link {
+    color:#FA480C;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #498CF0;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #ffffff;
+    background: #FA480C;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #F5A51B;
+  }
+
+/* CONTAINER */
+.container {
+    background-color: #A8A6A3;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*header*/
+.header {
+    background-color:rgba(168, 166, 163, 0.4);
+    background-image:  -webkit-linear-gradient(30deg,rgba(0, 0, 0, 0.10) 30%, rgba(0, 0, 0, 0.0) 70%);
+    margin: auto;
+    margin-bottom: 30px;
+    align-content: center;
+    border-radius: 4px;
+}
+
+h1 {
+    position: relative;
+    letter-spacing: 6px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10vw;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-size: 120% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, 
+    #A4EDF3, 
+                      #4A8EF3,
+                      #FD490C,
+                      #F5A51B);
+    animation: .9s shake infinite alternate;
+  }
+  
+  @keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
+  
+/*OTHER HEADERS*/
+h2 {
+    color:black;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 36px;
+    text-align: center;
+}
+
+h3 {
+    color: #2f7793;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed #2f7793;
+}
+
+/*BODY PARAGRAPH*/
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 4px;
+}
+
+/*FOOTER*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#F4BC42;
+    color: black;
+}
+
+.footer > p {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+}
