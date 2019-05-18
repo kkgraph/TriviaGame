@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-//SETS UP EVENT LISTEN
+//setting up the listening events 
     $("#remaining-time").hide();
     $("#start").on("click", trivia.startGame);
     $(document).on("click" , ".option", trivia.guessChecker);
@@ -8,7 +8,7 @@ $(document).ready(function(){
   })
   
   var trivia = {
-    //FOR RESET TRIVIA
+    //for reseting the trivia game 
     correct: 0,
     incorrect: 0,
     unanswered: 0,
@@ -27,7 +27,7 @@ $(document).ready(function(){
     //CREATE ANSWER ARRAY
     options: {
       q1: ['Viatmin E', 'Vitamin C', 'Vitamin B12', 'Fiber'],
-      q2: ['True', 'False', 'Idk', 'Omivore FTW'],
+      q2: ['True', 'False'],
       q3: ['Kidney Beans', 'Lentils', 'Lima Beans', 'Chickpeas'],
       q4: ['Hersheys Chocolate Syrup', 'Puff Cheeots', 'Cherry Poptarts', 'Greek Yogurt'],
     },
