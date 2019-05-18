@@ -6,7 +6,7 @@
 body {
     background-image: url("bg.png");
     background-repeat: repeat;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Slab', serif;
 }
 
 /*LINKS*/
@@ -17,23 +17,23 @@ a:link {
   
   /* visited link */
   a:visited {
-    color: #498CF0;
+    color: #87AB4B;
   }
   
   /* mouse over link */
   a:hover {
-    color: #ffffff;
-    background: #FA480C;
+    color: #88AC4B;
+    background: #E1E796;
   }
   
   /* selected link */
   a:active {
-    color: #F5A51B;
+    color: #88AC4B;
   }
 
 /* CONTAINER */
 .container {
-    background-color:rgba(164, 237, 243, .95);
+    background-color: rgba(136, 172, 75, .95);
     margin: auto;
     margin-top: 120px;
     margin-bottom: 100px;
@@ -42,10 +42,18 @@ a:link {
     border-radius: 5px;
 }
 
+.header {
+  width: 60%;
+  margin: auto;
+  border: 10px dotted white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
 h1 {
     position: relative;
-    letter-spacing: 6px;
-    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 12px;
+    font-family: 'Amatic SC', cursive;
     font-size: 10vw;
     font-weight: 900;
     text-decoration: none;
@@ -61,9 +69,9 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(45deg, 
-                      #A9A7A4, 
-                      #5F5D59,
-                      #FD490C,
+    #f9dd9a, 
+                      #f3a735,
+                      #e19209,
                       #F5A51B);
     animation: .9s shake infinite alternate;
   }
@@ -80,29 +88,103 @@ h1 {
 /*OTHER HEADERS*/
 h2 {
     color:black;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 36px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 46px;
     text-align: center;
+    letter-spacing: 5px;
+}
+
+#last-seconds {
+  color:red;
+  font-family: 'Amatic SC', cursive;
+  font-size: 46px;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 h3 {
-    color: #2f7793;
-    font-family: 'Montserrat', sans-serif;
+    color: #bc24a8;
+    font-family: 'Josefin Slab', serif;
     font-size: 30px;
+    font-weight: bold;
     padding: 5px;
     margin: 5px;
     margin-bottom: 10px;
-    border-bottom: 2px dashed #2f7793;
 }
 
 /*BODY PARAGRAPH*/
 p {
-    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-family: 'Josefin Slab', serif;
     font-size: 20px;
     line-height: 1.5em;
     padding: 4px;
 }
 
+/*BUTTONS*/
+.btn {
+  background-color: #AB4B58; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+#btn-yes {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+#btn-no {
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+#start {
+  background-color: #AB4B58; 
+  border: none;
+  color: white;
+  padding: 20px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+/*SPECIAL IDs FOR CONTAINERS*/
+#choices {
+  width: 30%;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 20px;
+}
 /*FOOTER*/
 .footer {
     position: fixed;
@@ -114,7 +196,7 @@ p {
 }
 
 .footer > p {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Josefin Slab', serif;
     font-size: 26px;
     text-align: center;
     letter-spacing: 2px;
