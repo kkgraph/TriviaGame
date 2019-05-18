@@ -75,7 +75,20 @@ $(document).ready(function(){
     if(!trivia.timerOn) {
       trivia.timerId = setInterval(trivia.timerRunning, 1000);
     }
-    
-  }
+
+    //GETS QUESTIONS 
+    var questionCotent = Object.values(trivia.questions)[trivia.currentSet];
+    $("#question").text(questionContent);
+
+    //AN ARRAY OF OPTIONS FOR ANSWERS CREATED
+    var questionOptions = Object.values(trivia.options)[trivia.currentSet];
+
+    //CREATES ALL THE TRIVIA QUESTIONS 
+    $.each(questionOptions, function(index, key) {
+      $("#options").append($('<button class="option btn btn-info btn-lg">' + key + '</button>'));
+    })
+
+  },
+  //
 
 }
