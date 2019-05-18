@@ -96,7 +96,7 @@ h2 {
     letter-spacing: 5px;
 }
 
-#last-seconds {
+#last-chance {
   color:red;
   font-family: 'Amatic SC', cursive;
   font-size: 46px;
@@ -105,10 +105,11 @@ h2 {
 }
 
 h3 {
-    color: #bc24a8;
+    color: white;
     font-family: 'Josefin Slab', serif;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
+    text-align: center;
     padding: 5px;
     margin: 5px;
     margin-bottom: 10px;
@@ -118,13 +119,14 @@ h3 {
 p {
     color: black;
     font-family: 'Josefin Slab', serif;
-    font-size: 20px;
+    font-size: 22px;
+    text-align: center;
     line-height: 1.5em;
     padding: 4px;
 }
 
 /*BUTTONS*/
-.btn {
+.option {
   background-color: #AB4B58; 
   border: none;
   color: white;
@@ -145,36 +147,14 @@ button:hover {
   border: 2px solid white;
 }
 
-#btn-yes {
-    background-color: #4CAF50; /* Green */
-    border: none;
+.btn-yes {
+    background-color: #4CAF50;
     color: white;
-    padding: 15px 32px;
-    border: 2px solid white;
-    font-family: 'Josefin Slab', serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 3px;
   }
 
-#btn-no {
+.btn-no {
   background-color:red;
-  border: none;
   color: white;
-  padding: 15px 32px;
-  font-family: 'Josefin Slab', serif;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
-  margin-left: 10px;
-  margin-bottom: 50px;
-  border-radius: 3px;
 }
 
 #start {
@@ -201,7 +181,7 @@ button:hover {
 
 /*SPECIAL IDs FOR CONTAINERS*/
 #choices {
-  width: 30%;
+  width: 55%;
   margin: auto;
   padding: 5px;
   margin-bottom: 20px;
