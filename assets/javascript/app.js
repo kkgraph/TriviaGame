@@ -108,8 +108,8 @@ $(document).ready(function(){
       trivia.unanswered++;
       trivia.result = false;
       clearInterval(trivia.timerId);
-      resultID = setTimeout(trivia.guessResult, 1000);
-      $("#results").html("<h3>Out of time! The answer was " + Object.values(trivia.answers)[trivia.currentSet] + "</h3>");
+      resultID = setTimeout(trivia.guessResult, 2000);
+      $("#results").html("<h3>Out of time! The answer was  " + Object.values(trivia.answers)[trivia.currentSet] + "</h3>");
     }
 
     //IF ALL QUESTIONS HAVE BEEN SHOWED THEN END GAME
