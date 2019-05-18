@@ -4,44 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vegan Trivia</title>
+
+    <!--CSS LINKS-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--FAV ICON-->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico"/>
+
+    <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab&display=swap" rel="stylesheet">
 
-    <!--jQUERY-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Vegan Trivia</title>
 </head>
+
 <body>        
-        <div class="container"> <!--DIV FOR CONTAINER START-->
-            <div class="header">
-                <h1>Vegan Trivia</h1> 
-            </div> 
-        <!-- GAME START-->
-
-        <div id="game">
-            <h2 id="remaining-time">Remaining Time: <span id="timer"></span></h2>
-            <p id="question"></p>
-        </div>
-
-        <div id="results">
-
-        </div>
-
-        <div id="choices">
-            <button id="start">Start Game</button>
-        <div id="options"> <!--WHERE THE ANSWER OPTIONS WILL GO--></div>
+    <div class="container"> <!--DIV FOR CONTAINER START-->
+        <!--HEADER-->
+        <div class="header"> 
+            <h1>Vegan Trivia</h1> 
         </div> 
+       
+     <!-- GAME START-->
+    <div id="game">
+        <h2 id="remaining-time" class="lead">Remaining Time: <span id="timer">00</span></h2>
+        <p id="question" class="lead"></p>
+    </div>
+    <div id="results">
+    
+    </div>
+
+   <div id="choices" class="text-center">
+       <button id="start" class="btn btn-info btn-lg">Start Game</button>
+       <div id="options">
+       </div>
+   </div>
 
     </div><!--DIV CONTAINER END-->
 
-        <!--FOOTER-->
+<!--FOOTER-->
     <div class="footer">
-      <!--credit thingy-->
+<!--credit thingy-->
         <p>Vegan Trivia <a href="https://github.com/kkgraph">by Graffic Games</a> // 2019</a></p>
-    </div>
-            <!--FOOTER END-->
+    </div> <!--FOOTER END-->
         
 <!--JAVASCRIPT-->
     <!-- TRIVIA -->

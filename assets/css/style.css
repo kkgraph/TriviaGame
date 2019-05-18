@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("bg.png");
+    background-image: url("../images/bg.png");
     background-repeat: repeat;
     font-family: 'Josefin Slab', serif;
 }
@@ -43,6 +43,7 @@ a:link {
 }
 
 .header {
+  background-color: rgba(171, 75, 88, .85);
   width: 60%;
   margin: auto;
   border: 10px dotted white;
@@ -134,6 +135,13 @@ p {
   margin: auto;
   margin-left: 10px;
   margin-bottom: 50px;
+  border-radius: 3px;
+}
+
+button:hover {
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 2px solid white;
 }
 
 #btn-yes {
@@ -142,12 +150,14 @@ p {
     color: white;
     padding: 15px 32px;
     border: 2px solid white;
+    font-family: 'Josefin Slab', serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 3px;
   }
 
 #btn-no {
@@ -155,6 +165,7 @@ p {
   border: none;
   color: white;
   padding: 15px 32px;
+  font-family: 'Josefin Slab', serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -162,6 +173,7 @@ p {
   margin: auto;
   margin-left: 10px;
   margin-bottom: 50px;
+  border-radius: 3px;
 }
 
 #start {
@@ -169,13 +181,20 @@ p {
   border: none;
   color: white;
   padding: 20px 64px;
+  font-family: 'Josefin Slab', serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 40px;
   margin: auto;
   margin-left: 10px;
   margin-bottom: 50px;
+  border-radius: 3px;
+}
+
+#start:hover {
+  font-weight: bolder;
+  border: 3px solid white;
 }
 
 /*SPECIAL IDs FOR CONTAINERS*/
@@ -184,6 +203,7 @@ p {
   margin: auto;
   padding: 5px;
   margin-bottom: 20px;
+  align-content: center;
 }
 /*FOOTER*/
 .footer {
