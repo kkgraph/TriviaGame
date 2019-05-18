@@ -39,6 +39,7 @@ a:link {
     margin-bottom: 100px;
     width: 80%;
     padding: 10px;
+    border: 4px solid white;
     border-radius: 5px;
 }
 
@@ -70,7 +71,7 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(45deg, 
-    #f9dd9a, 
+                      #f9dd9a, 
                       #f3a735,
                       #e19209,
                       #F5A51B);

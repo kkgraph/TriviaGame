@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//SETS UP TRIVIA
+//SETS UP EVENT LISTEN
     $("#remaining-time").hide();
     $("#start").on('click', trivia.startGame);
     $(document).on('click' , '.option', trivia.guessChecker);
@@ -12,7 +12,7 @@ $(document).ready(function(){
     incorrect: 0,
     unanswered: 0,
     currentSet: 0,
-    timer: 30,
+    timer: 20,
     timerOn: false,
     timerId : '',
     // QUESTIONS
@@ -64,5 +64,18 @@ $(document).ready(function(){
     trivia.nextQuestion();
     
   },
+
+  nextQuestion: function() {
+    //20 SECONDS PER QUESTIONS
+    trivia.timer = 10;
+    $("#timer").removeClass("last-second");
+    $("#timer").text(trivia.timer);
+
+    //INTERVAL
+    if(!trivia.timerOn) {
+      trivia.timerId = setInterval(trivia.timerRunning, 1000);
+    }
+    
+  }
 
 }
