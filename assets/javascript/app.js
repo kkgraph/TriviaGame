@@ -37,32 +37,3 @@ $(document).ready(function(){
       q3: 'lentils',
       q4: 'Hersheys Chocolate Syrup',
     },
-    // TO START GAME
-    startGame: function(){
-      // RESETTING RESULTS TO BASIC 
-      trivia.currentSet = 0;
-      trivia.correct = 0;
-      trivia.incorrect = 0;
-      trivia.unanswered = 0;
-      clearInterval(trivia.timerId);
-      
-      // SHOW GAME
-      $('#game').show();
-      
-      //  REMOVE LAST RESULTS
-      $('#results').html('');
-      
-      // SHOW TIMER
-      $('#timer').text(trivia.timer);
-      
-      // HIDES START BUTTON
-      $('#start').hide();
-  
-      $('#remaining-time').show();
-      
-      // ASK QUESTION 
-      trivia.nextQuestion();
-      
-    },
-
-    
