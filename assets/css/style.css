@@ -33,23 +33,13 @@ a:link {
 
 /* CONTAINER */
 .container {
-    background-color: #A8A6A3;
+    background-color:rgba(164, 237, 243, .95);
     margin: auto;
     margin-top: 120px;
     margin-bottom: 100px;
     width: 80%;
     padding: 10px;
     border-radius: 5px;
-}
-
-/*header*/
-.header {
-    background-color:rgba(168, 166, 163, 0.4);
-    background-image:  -webkit-linear-gradient(30deg,rgba(0, 0, 0, 0.10) 30%, rgba(0, 0, 0, 0.0) 70%);
-    margin: auto;
-    margin-bottom: 30px;
-    align-content: center;
-    border-radius: 4px;
 }
 
 h1 {
@@ -71,8 +61,8 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(45deg, 
-    #A4EDF3, 
-                      #4A8EF3,
+                      #A9A7A4, 
+                      #5F5D59,
                       #FD490C,
                       #F5A51B);
     animation: .9s shake infinite alternate;
