@@ -13,7 +13,7 @@ $(document).ready(function(){
     incorrect: 0,
     unanswered: 0,
     currentSet: 0,
-    timer: 20,
+    timer: 10,
     timerOn: false,
     timerId : '',
     // QUESTIONS
